@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularCurrencyConverter';
+  clickCounter = 0;
+
+  
+
+  incrementCounterUp(){
+    this.clickCounter++;
+    if (this.clickCounter <= -1) {
+      this.clickCounter = 0;
+    }
+  }
+  incrementCounterDown(){
+    this.clickCounter--;
+    if (this.clickCounter <= -1) {
+      this.clickCounter = 0;
+  }
+  
+}
+
 }
